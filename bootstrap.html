@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Zach Cardais Bootstrap 4 Portfolio</title>
+
+  <!--  Styles  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Taviraj:500,700|Work+Sans:200,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="styles/bootstrap.css">
+
+</head>
+
+
+<body>
+
+  <header class="jumbotron jumbotron-fluid bg-info text-white">
+    <nav class="navbar navbar-default navbar-toggleable-md" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="navbar-brand">Zach Cardais <span class="subhead">Portfolio</span></a>
+        </div><!-- navbar-brand -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Variations</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="index.html">Portfolio - Responsive</a></li>
+                <li><a class="dropdown-item" href="fancybox.html">Portfolio - Fancybox</a></li>
+                <li class="active"><a class="dropdown-item" href="bootstrap.html">Portfolio - Bootstrap 4</a></li>
+                <li><a class="dropdown-item" href="foundation.html">Portfolio - Foundation 6</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul> <!-- navbar-nav -->
+        </div><!-- collapse navbar-collapse -->
+      </div> <!-- container -->
+    </nav>
+    <div class="container">
+      <div class="display-2 mb-4">Zach Cardais Portfolio</div>
+      <p class="lead">Web Design & Development</p>
+      <a href="#portfolio">View our work</a>
+    </div> <!-- container -->
+  </header>
+
+  <!-- Portfolio Cards -->
+  <div class="page">
+    <div class="container card-deck mt-5">
+      <h2 class="mt-5 text-uppercase">Our Work</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="portfolio">
+            <header class="card-header">
+              <h2 class="mb-0">Profile Page</h2>
+            </header>
+            <a href="images/full_profile.png" data-fancybox="gallery"><img src="images/full_profile.png" alt="" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">Personal Site</h5>
+              <p class="card-text">Customized personal online profile using HTML + CSS.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutgallery" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutgallery" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>Personal Site</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_profile.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="#" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="portfolio">
+            <header class="card-header">
+              <h2 class="mb-0">Portfolio</h2>
+            </header>
+            <a href="images/full_portfolio.png" data-fancybox="gallery"><img src="images/full_portfolio_625x352.png" alt="Portfolio Site" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">Device-agnostic</h5>
+              <p class="card-text">Responsive, mobile-first layout using HTML and CSS.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutportfolio" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutportfolio" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>Portfolio Site</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_portfolio.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="https://zcardais.github.io/responsive_layout_v2/" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="form">
+            <header class="card-header">
+              <h2 class="mb-0">Lead Gen Form</h2>
+            </header>
+            <a href="images/full_form.png" data-fancybox="gallery"><img src="images/thumbnail_form.png" alt="Form Site" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">Lead Generation</h5>
+              <p class="card-text">Responsive, mobile-first registration form.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutform" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutform" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>Lead Gen Site</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_form.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="https://zcardais.github.io/online_registration_v3/" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+        <div class="clearfix visible-md-block"></div>
+
+        <!-- NEXT GROUP -->
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="gallery">
+            <header class="card-header">
+              <h2 class="mb-0">Gallery</h2>
+            </header>
+            <a href="images/full_gallery.png" data-fancybox="gallery" ><img src="images/full_gallery.png" alt="Gallery Site" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">Interactive Photo Gallery</h5>
+              <p class="card-text">Interactive photo gallery using JavaScript and jQuery</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutphotogallery" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutphotogallery" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>Interactive Photo Gallery</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_gallery.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="https://zcardais.github.io/photo_gallery_v1_P4/" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="svg">
+            <header class="card-header">
+              <h2 class="mb-0">SVG Update</h2>
+            </header>
+            <a href="images/full_svg.png" data-fancybox="gallery"><img src="images/full_svg.png" alt="SVG Site" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">SVG Graphics</h5>
+              <p class="card-text">Optimized web page featuring SVG graphics.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutsvg" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutsvg" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>SVG Graphics</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_svg.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="https://zcardais.github.io/p6_svg_site_update/" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="#">
+            <header class="card-header">
+              <h2 class="mb-0">Web Dashboard</h2>
+            </header>
+            <a href="images/full_dashboard.png" data-fancybox="gallery"><img src="images/full_dashboard.png" alt="" class="img-fluid"></a>
+            <div class="card-block">
+              <h5 class="card-subtitle">KPI Dashboard</h5>
+              <p class="card-text">Interactive dashboard using advanced web techniques.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#aboutdashboard" class="card-link" data-toggle="modal">About</a>
+              <div id="aboutdashboard" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal-title"><h4>KPI Dashboard</h4></div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatibus dignissimos ullam itaque commodi consectetur, asperiores expedita nulla atque numquam beatae laudantium eum iure a animi quaerat placeat illo dolor.
+                    </div><!-- modal-body -->
+                  </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+              </div><!-- modal fade -->
+              <a href="images/full_dashboard.png" data-fancybox="gallery" class="card-link">Lightbox</a>
+              <a href="https://zcardais.github.io/P9_web_app_dashboard/" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+        <div class="clearfix visible-md-block"></div>
+
+
+        <!-- NEXT GROUP -->
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="#">
+            <header class="card-header">
+              <h2 class="mb-0">H2</h2>
+            </header>
+            <img src="http://placehold.it/626x352" alt="Portfolio Site" class="img-fluid">
+            <div class="card-block">
+              <h5 class="card-subtitle">Subtitle</h5>
+              <p class="card-text">Description of site goes here.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#" class="card-link">About</a>
+              <a href="#" class="card-link">Lightbox</a>
+              <a href="#" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="#">
+            <header class="card-header">
+              <h2 class="mb-0">H2</h2>
+            </header>
+            <img src="http://placehold.it/626x352" alt="Gallery Site" class="img-fluid">
+            <div class="card-block">
+              <h5 class="card-subtitle">Subtitle</h5>
+              <p class="card-text">Description of site goes here.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#" class="card-link">About</a>
+              <a href="#" class="card-link">Lightbox</a>
+              <a href="#" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <section class="card mb-5 mt-3" id="#">
+            <header class="card-header">
+              <h2 class="mb-0">H2</h2>
+            </header>
+            <img src="http://placehold.it/626x352" alt="" class="img-fluid">
+            <div class="card-block">
+              <h5 class="card-subtitle">Subtitle</h5>
+              <p class="card-text">Description of site goes here.</p>
+            </div><!-- card-block -->
+            <footer class="card-footer">
+              <a href="#" class="card-link">About</a>
+              <a href="#" class="card-link">Lightbox</a>
+              <a href="#" target="_blank" class="card-link">Visit</a>
+            </footer>
+          </section> <!-- card -->
+        </div><!-- col-md-4 -->
+        <div class="clearfix visible-md-block"></div>
+      </div><!-- row -->
+
+    </div> <!-- container card-deck -->
+
+    <div class="container">
+      <h2 class="mt-4 text-uppercase">Contact Us</h2>
+      <form action="">
+        <fieldset class="form-group">
+          <legend>Got a project in mind?</legend>
+          <div class="form-group">
+            <label class="form-control-label sr-only" for="name">Name</label>
+            <input class="form-control" type="text" id="name" placeholder="Your Name">
+          </div><!-- form-group -->
+          <div class="form-group">
+            <label class="form-control-label sr-only" for="email">Email</label>
+            <input class="form-control" type="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+            <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+          </div><!-- form-group -->
+          <div class="form-group">
+            <label class="form-control-label sr-only" for="phone">Phone</label>
+            <input class="form-control" type="tel" id="phone" placeholder="Phone Number">
+          </div><!-- form-group -->
+          <div class="form-group">
+            <label class="form-control-label sr-only" for="description">Here's where you tell us about why you're filling out this form.</label>
+            <textarea class="form-control" name="description" rows="8" cols="80" placeholder="Here's where you tell us about why you're filling out this form."></textarea>
+          </div><!-- form-group -->
+        </fieldset>
+        <button type="button" class="btn btn-success btn-lg btn-block">Send</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <footer class="mt-4 text-center">
+            <div class="row">
+              <div class="col-md-6">&copy; Zach Cardais Portfolio</div>
+              <div class="col-md-6">
+                <div class="content">
+                    <a class="pr-4" href="mailto:zach@zeffective.com" title="Email" target="_blank">Email</a>
+                    <a class="pr-4" href="https://www.linkedin.com/in/zachcardais/" title="Linked In" target="_blank">Linked In</a>
+                    <a class="pr-4" href="https://twitter.com/Zeffective" title="Twitter" target="_blank">Twitter</a>
+                </div>
+              </div>
+            </div>
+        </footer>
+    </div> <!-- .container -->
+  </div><!-- page -->
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+
+</body>
+
+
+</html>

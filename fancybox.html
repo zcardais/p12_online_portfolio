@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Zach Cardais Fancybox Portfolio</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Taviraj:500,700|Work+Sans:200,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/fancybox.css">
+
+</head>
+
+<body>
+
+
+  <div id="page">
+
+    <header>
+      <a href="index.html" class="logo" title="Zach Cardais Portfolio"><span>Zach Cardais Portfolio</span></a>
+      <div class="hero">
+        <h1>Web Design & Development</h1>
+        <a href="#portfolio" class="btn" title="View our work">View<span> our work.</span></a>
+      </div>
+    </header>
+
+    <section id="portfolio" class="main">
+
+      <!-- WITH FANCYBOX -->
+      <aside>
+        <div class="content">
+          <a href="images/full_accessibility.png" data-fancybox="gallery"><img class="fancybox" src="images/thumbnail_accessibility.png" alt="Accessibility Site"></a>
+        </div>
+      </aside>
+      <aside>
+        <div class="content">
+          <a href="images/full_api.png" data-fancybox="gallery"><img class="fancybox" src="images/thumbnail_api.png" alt="API Site"></a>
+        </div>
+      </aside>
+      <aside>
+        <div class="content">
+          <a href="images/full_dashboard.png" data-fancybox="gallery"><img class="fancybox" src="images/thumbnail_dashboard.png" alt="Dashboard Site"></a>
+        </div>
+      </aside>
+
+    </section> <!-- .main -->
+
+    <section class="about">
+
+      <article>
+        <h2>Our Work</h2>
+        <p>We specialize in creating websites for small- and medium-sized B2B and B2C companies. All websites are designed and built through a collaborative process with you, our client…it will have your fingerprints all over it.</p>
+        <a href="#" class="btn" title="About Zach Cardais">Learn more</a>
+      </article>
+
+    </section> <!-- .about -->
+
+    <section class="testimonials">
+      <aside>
+        <div class="content">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/000/273/29b/1913daa.jpg" alt="Mark M.">
+          <h4>Mark M., CEO, Small Business</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatum voluptas, amet, omnis neque nisi debitis aliquid unde quia velit blanditiis aspernatur! Aperiam, nobis. Qui voluptas velit esse, architecto perferendis.</p>
+          <a href="#">Read more</a>
+        </div>
+      </aside>
+      <aside>
+        <div class="content">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAmSAAAAJGI1ZGZiYTUzLTZkNWItNDI1YS04NzQyLTg2NmRlY2VmNzhhMw.jpg" alt="Betsy I.">
+          <h4>Betsy I., CEO, Medium Business</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corrupti quae praesentium, asperiores nostrum quibusdam voluptatum saepe quos maiores provident! Minima molestiae, earum quo error, quod ad laudantium. Quam, praesentium.</p>
+          <a href="#">Read more</a>
+        </div>
+      </aside>
+      <blockquote>
+        <p class="quote">Zach is the consummate professional. Working with him and his team was dead simple and the end product, our redesigned company KPI dashboard, exceeded our expectations.</p>
+        <p class="credit"><strong>John Roe</strong><br> <em>CEO</em><br> Medium-Sized Company</p>
+
+      </blockquote>
+
+    </section> <!-- .testimonials -->
+
+    <section class="form">
+
+      <form action="" method="post" id="contact">
+        <h3>Contact</h3>
+        <h4>Send it today, get reply today.</h4>
+        <fieldset>
+          <input type="text" placeholder="Your name" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input type="email" placeholder="Your email address" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input type="tel" placeholder="Your phone number" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input type="url" placeholder="Your website" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Tell us about your project." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="…Sending">Submit</button>
+        </fieldset>
+      </form>
+
+    </section> <!-- .form -->
+
+    <section class="simple-form">
+      <form action="/contact-form" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="About Us" aria-haspopup="true">About Us</a>
+          <ul>
+            <li><a href="#">Our Founder</a></li>
+            <li><a href="#">Our Story</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="Variations" aria-haspopup="true">Variations</a>
+          <ul>
+            <li><a href="index.html">Home Portfolio</a></li>
+            <li><a href="fancybox.html">Fancybox Portfolio</a></li>
+            <li><a href="bootstrap.html">Bootstrap Portfolio</a></li>
+            <li><a href="foundation.html">Foundation Portfolio</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#portfolio" aria-haspopup="true">Portfolio</a>
+          <ul>
+            <li>
+              <a href="#">Small Business</a>
+              <ul>
+                <li><a href="#">Sub Sub Link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Medium Business</a></li>
+            <li><a href="#">Responsive Design</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      &copy; Zach Cardais Portfolio
+      <div class="content">
+        <a href="mailto:zach@zeffective.com" title="Email" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/zachcardais/" title="Linked In" target="_blank">Linked In</a>
+        <a href="https://twitter.com/Zeffective" title="Twitter" target="_blank">Twitter</a>
+      </div>
+    </footer>
+
+  </div>  <!-- #page -->
+
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
