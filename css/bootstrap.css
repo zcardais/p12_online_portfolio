@@ -1,0 +1,85 @@
+body {
+  font-weight: 300;
+  position: relative;
+}
+
+img {
+  max-width: 200px;
+}
+
+
+/*Header Navigation*/
+
+header .navbar {
+  padding: 30px 0;
+}
+
+header .navbar-light {
+  background-color: transparent;
+  border: none;
+}
+
+header .navbar-light .navbar-nav a {
+  color: white;
+  padding: 5px 8px;
+}
+
+ul.dropdown-menu a.dropdown-item {
+  color: #5BC0DE;
+}
+
+header .navbar-light .navbar-nav a:hover {
+  color: #0c74bb;
+}
+
+header .navbar-light .navbar-nav .active a {
+  font-weight: 700;
+  color: #0c74bb;
+  background: transparent;
+  border-bottom: 4px solid #0c74bb;
+  text-shadow: none;
+}
+
+header .navbar-light .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none;
+}
+
+.page {
+  padding: 10px 0;
+}
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+
+
+/*No media query since this is the default in Bootstrap*/
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
