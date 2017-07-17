@@ -47,14 +47,14 @@ header .navbar-light .navbar-nav .active a:hover {
 }
 
 .page {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 footer {
   color: white;
 }
 
-footer a {
+.footer a {
   color: white;
 }
 
@@ -72,7 +72,14 @@ footer a {
 
 /*Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.35rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+}
 
 
 /*Large devices (desktops, 992px and up)*/

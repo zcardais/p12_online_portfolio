@@ -208,7 +208,7 @@ section.main aside h3 a:hover {
 /*Expanding Panels*/
 
 section.main .expanding_panel {
-  margin: 15px;
+  margin: 0 15px 25px 15px;
   color: #000;
   font-size: .75em;
   padding: 15px 10px 10px 10px;
@@ -702,14 +702,18 @@ footer a:hover {
   section.main aside {
     width: 100%;
     float: none;
-    text-align: left;
+    text-align: center;
   }
   section.main aside div.content {
     margin: 8px 20px 8px 0;
     padding: 5px 0 10px 85px;
-    /*background-size: 50px 50px;*/
+    background-size: cover;
     /* TODO: Adjust size to fix */
-    background-position: 20px 5px;
+    /*background-position: 20px 5px;*/
+  }
+  section.main .expanding_panel {
+    font-size: .9em;
+    padding: 5px 10px 30px 10px;
   }
   section.about article {
     padding: 160px 20px 0 0;
