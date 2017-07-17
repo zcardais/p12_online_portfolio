@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Foundation 6 - Portfolio</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css">
+	<link rel="stylesheet" href="css/foundation.css" />
+</head>
+<body>
+
+
+	<div class="grid-x grid-padding-x">
+		<!-- Header Nav -->
+		<div class="large-12 cell">
+			<header class="sticky-shrinknav-header bg-gradient" id="top">
+				<h1 class="sticky-shrinknav-header-title">Zach Cardais Portfolio</h1>
+				<ul class="menu align-center sticky-shrinknav-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#aboutus">About</a></li>
+					<li>
+						<a href="#">Variations</a>
+						<ul class="menu">
+							<li><a href="bootstrap.html">Bootstrap Gallery</a></li>
+							<li><a href="foundation.html">Foundation Gallery</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</header>
+		</div>
+	</div>
+
+	<!-- Row Column Gallery -->
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x grid-margin-y small-up-2 medium-up-3">
+			<div class="cell">
+				<img class="thumbnail" src="images/personal_366x500.png" alt="Personal Site">
+				<h5>Personal Site</h5>
+			</div>
+			<div class="cell">
+				<img class="thumbnail" src="images/portfolio_366x500.png" alt="Portfolio Site">
+				<h5>Portfolio Site</h5>
+			</div>
+			<div class="cell">
+				<img class="thumbnail" src="images/form_366x500.png" alt="Lead Gen Site">
+				<h5>Lead Gen Site</h5>
+			</div>
+			<div class="cell">
+				<img class="thumbnail" src="images/stockphotography_366x500.png" alt="Performance Optimization">
+				<h5>Optimized Performance</h5>
+			</div>
+			<div class="cell">
+				<img class="thumbnail" src="images/svg_366x500.png" alt="SVG Site">
+				<h5>SVG Site</h5>
+			</div>
+			<div class="cell">
+				<img class="thumbnail" src="images/dashboard_366x500.png" alt="KPI Dashboard Web App">
+				<h5>KPI Dashboard Web App</h5>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- Form -->
+		<div class="grid-x grid-padding-x">
+			<div class="medium-6 cell">
+				<h3>Contact Me</h3>
+				<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+				<ul class="menu">
+					<li><a href="https://twitter.com/Zeffective">Twitter</a></li>
+					<li><a href="https://www.linkedin.com/in/zachcardais/">Linked In</a></li>
+					<li><a href="mailto:zach@zeffective.com" title="Email" target="_blank">Email</a></li>
+				</ul>
+			</div><!-- medium-6 -->
+			<div class="medium-6 cell">
+				<form action="#">
+					<label for="name">Name
+						<input id="name" type="text" placeholder="Name">
+					</label>
+					<label for="email">Email
+						<input id="email" type="email" placeholder="Email">
+					</label>
+					<label for="message">Message
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="holla back youngin;"></textarea>
+					</label>
+					<input type="button" class="button success expanded" value="Send">
+				</form>
+			</div>
+		</div><!-- row -->
+	</div><!-- .grid-container -->
+
+
+	<!-- Compressed JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.3.0/what-input.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.js"></script>
+	<script src="js/foundation.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+</body>
+</html>
