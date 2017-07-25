@@ -5,82 +5,138 @@ body {
   padding-top: $sticky-shrinknav-hero-height + 30px;
 }
 
+.button.success {
+  color: #fefefe;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
 .sticky-shrinknav-menu {
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	bottom: 0;
-	height: 3.75rem;
-	line-height: 3.75rem;
-	width: 100%;
-	background-color: rgba(23, 121, 186, 0.1);
-	transition: all 0.5s ease;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  // background-color: rgba(23, 121, 186, 0.1);
+  background-color: rgba(53, 17, 90, 0.1);
+  transition: all 0.5s ease;
 
-	li {
-	border-radius: 2px;
-	transition: all 0.3s ease;
+  li {
+    border-radius: 2px;
+    transition: all 0.3s ease;
 
-	&:hover {
-	box-shadow: 0 0 0 1px #fefefe;
-}
-}
-	a {
-	color: #fefefe;
-}
+    &:hover {
+      box-shadow: 0 0 0 1px #fefefe;
+    }
+  }
+
+  a {
+    color: #fefefe;
+  }
 }
 
 .sticky-shrinknav-header-title {
-	transition: all 0.3s ease;
-	position: relative;
-	-webkit-transform: translateY(-1.875rem);
-	-ms-transform: translateY(-1.875rem);
-	transform: translateY(-1.875rem);
-	margin-bottom: 0;
-	color: #fefefe;
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-transform: translateY(-1.875rem);
+  -ms-transform: translateY(-1.875rem);
+  transform: translateY(-1.875rem);
+  margin-bottom: 0;
+  color: #fefefe;
 }
 
 .sticky-shrinknav-header {
-	width: 100%;
-	height: $sticky-shrinknav-hero-height;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	background-color: #2196e3;
-	text-align: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	transition: all 0.5s ease;
-
+  width: 100%;
+  height: $sticky-shrinknav-hero-height;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  // background-color: #2196e3;
+  background-image: linear-gradient(to right bottom,#35115a 20%,#84355a 45%,#d25959 62%,#e67e53 83%,#f9a24d 100%);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 body.sticky-shrinknav-wrapper {
-	padding-top: 130px;
+  padding-top: 130px;
 }
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
-	height: 3.75rem;
-	background-color: rgba(23, 121, 186, 0.9);
+  height: 5rem;
+  background-color: rgba(23, 121, 186, 0.9);
 }
 
 body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.3s ease;
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-	/* border-color: #1779ba transparent transparent; */
-	right: 5px;
-	margin-top: -12px;
+  // border-color: #1779ba transparent transparent;
+  right: 5px;
+  margin-top: -12px;
+}
+
+.about {
+  // background-color: #ec5d56;
+  background-image: linear-gradient(to right bottom,#2f0b4b 0,#116a8c 100%);
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .17);
+    border-radius: 36px;
+    cursor: pointer;
+    padding: 14px 32px 16px;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  .grid-x {
+    padding: 0 20px;
+    min-height: 220px;
+  }
+
+  .thumbnail {
+    border: none;
+    margin-bottom: 15px;
+    margin-right: 1rem;
+  }
+}
+
+.testimonials {
+  background: #f7fafc;
+
+  blockquote p {
+    color: #2196f3;
+  }
+}
+
+.contactform {
+  background: #f5f8fb;
+  border-top: 1px solid #e4e9ee;
 }
