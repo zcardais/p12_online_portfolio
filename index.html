@@ -8,7 +8,8 @@
   <title>Zach Cardais Home Portfolio</title>
   <!--  Styles  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Taviraj:500,700" rel="stylesheet">
   <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css">
   <link rel="stylesheet" href="css/index.css">
@@ -17,13 +18,45 @@
 <body>
   <div id="page">
     <header>
-      <a href="/" class="logo" id="#top" title="Zach Cardais Portfolio"><span>Zach Cardais Portfolio</span></a>
+      <a href="index.html" class="logo" id="#top" title="Zach Cardais Portfolio"><span>Zach Cardais Portfolio</span></a>
       <div class="hero">
         <h1>Web Design & Development</h1>
         <a href="#portfolio" class="btn" title="View our work">View<span> our work.</span></a>
       </div>
     </header>
-    <section id="portfolio" class="main">
+    <section class="main" id="portfolio">
+      <h2 class="heading">Our Work</h2>
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quam voluptate et perspiciatis eius incidunt natus sint saepe minus iste. Sunt saepe porro vero ad nulla nihil error possimus, iste.</p>
+      <aside>
+        <a href="images/accessibility_fullcapture.png" data-lightbox="accessibility-site" data-title="Accessibility Site">
+          <img class="thumbnail" src="images/accessibility_366x500.png" alt="Accessibility Site">
+          <!-- <div class="content accessibility-site"></div> -->
+        </a>
+        <h3><a href="https://zcardais.github.io/P8_accessibility_refactor/" target="_blank">Accessibility Site</a></h3>
+        <div class="expanding_panel" data-link-text="Read more">
+          <p>All of our sites <a href="https://zcardais.github.io/P8_accessibility_refactor/" target="_blank">meet WP3 accessibility standards</a> so none of your visitors will be left out from your content.</p>
+        </div>
+      </aside>
+      <aside>
+        <a href="images/api_fullcapture.png" data-lightbox="API-spotify" data-title="API with Spotify">
+          <img src="images/api_366x500.png" alt="API Site" class="thumbnail">
+          <!-- <div class="content api-site"></div> -->
+        </a>
+        <h3><a href="https://zcardais.github.io/p10_api_gallery/" target="_blank">API Site</a></h3>
+        <div class="expanding_panel" data-link-text="Read more">
+          <p>See what we can do with <a href="https://zcardais.github.io/p10_api_gallery/" target="_blank">APIs like this Spotify web app.</a> Search for an artist, view their albums.</p>
+        </div>
+      </aside>
+      <aside>
+        <a href="images/dashboard_fullcapture.png" data-lightbox="KPI Dashboard" data-title="KPI Dashboard">
+          <img src="images/dashboard_366x500.png" alt="KPI Dashboard" class="thumbnail">
+          <!-- <div class="content dashboard-site"></div> -->
+        </a>
+        <h3><a href="https://zcardais.github.io/P9_web_app_dashboard/" target="_blank">Dashboard Site</a></h3>
+        <div class="expanding_panel" data-link-text="Read more">
+          <p>Every company has success metrics. Talk to us about how we can build you <a href="https://zcardais.github.io/P9_web_app_dashboard/" target="_blank">a customized interactive dashboard web app</a> with tables, charts, graphs, and real-time updates.</p>
+        </div>
+      </aside>
       <aside>
         <a href="images/accessibility_fullcapture.png" data-lightbox="accessibility-site" data-title="Accessibility Site">
           <div class="content accessibility-site"></div>
@@ -105,12 +138,13 @@
     <!-- .main -->
     <section class="about" id="aboutus">
       <article>
-        <h2>Our Work</h2>
+        <h2>Work With Us</h2>
         <p>We specialize in creating websites for small- and medium-sized B2B and B2C companies. All websites are designed and built through a collaborative process with you, our client…it will have your fingerprints all over it.</p>
         <a href="#" class="btn" title="About Zach Cardais">Learn more</a>
       </article>
     </section>
     <!-- .about -->
+
     <section class="testimonials" id="testimonials">
       <aside>
         <div class="content">
@@ -134,41 +168,64 @@
           <br> <em>CEO</em>
           <br> Medium-Sized Company</p>
         </blockquote>
+    </section>
+    <!-- .testimonials -->
+
+    <article class="otherformats">
+      <h2 class="heading">Other Formats</h2>
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum, officiis temporibus perspiciatis tenetur similique ex, atque natus esse, laudantium eum soluta, id quo voluptates porro. Quos quibusdam nemo soluta.</p>
+      <section class="halfs">
+        <div class="half">
+          <div class="content">
+            <h3 class="subheading">Bootstrap 4 Portfolio</h3>
+            <a href="images/bootstrap_full.png"><img class="thumbnail" src="images/bootstrap_screen.png" alt="Bootstrap 4 Portfolio"></a>
+          </div>
+        </div>
+        <div class="half">
+          <div class="content">
+            <h3 class="subheading">Foundation 6 Portfolio</h3>
+            <a href=""><img class="thumbnail" src="images/foundation_screen.png" alt="Foundation 6 Portfolio"></a>
+          </div>
+        </div>
       </section>
-      <!-- .testimonials -->
-      <section class="form">
-        <aside>
-          <form action="#" method="post" id="contact">
-            <h3>Get in touch</h3>
-            <h4>We do our best work when we collaborate with other passionate, innovative people. If it sounds like we're a good fit for your project, complete the form below and we'll get back to you ASAP…usually the same day.</h4>
-            <fieldset>
-              <input type="text" placeholder="Your name" tabindex="1" required>
-            </fieldset>
-            <fieldset>
-              <input type="email" placeholder="Your email address" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-              <input type="tel" placeholder="Your phone number" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-              <input type="url" placeholder="Your website" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-              <textarea placeholder="Tell us about your project." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="…Sending">Submit</button>
-            </fieldset>
-          </form>
-        </aside>
-      </section>
+    </article>
+
+    <section class="form">
+      <form class="contact-form" action="#" method="post" id="contact">
+        <section class="form-group">
+          <h3>Get in touch</h3>
+          <p class="lead">We do our best work when we collaborate with other passionate, innovative people. If it sounds like we're a good fit for your project, complete the form below and we'll get back to you ASAP…usually the same day.</p>
+        </section>
+        <section class="form-group">
+          <fieldset>
+            <input type="text" placeholder="Your name" tabindex="1" required>
+          </fieldset>
+          <fieldset>
+            <input type="email" placeholder="Your email address" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input type="tel" placeholder="Your phone number" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input type="url" placeholder="Your website" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Tell us about your project." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="…Sending">Send</button>
+          </fieldset>
+        </section>
+      </form>
+    </section>
+    <!-- .form -->
 
 
       <nav>
         <ul>
           <li><a href="#aboutus" aria-haspopup="true">About Us</a></li>
           <li>
-            <a href="Variations" aria-haspopup="true">Variations</a>
+            <a href="Variations" aria-haspopup="true">Galleries</a>
             <ul>
               <li><a href="index.html">Portfolio</a></li>
               <li><a href="bootstrap.html">Portfolio - Bootstrap 4</a></li>

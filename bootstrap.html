@@ -49,12 +49,11 @@
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
           </ul> <!-- navbar-nav -->
         </div><!-- collapse navbar-collapse -->
       </div> <!-- container -->
     </nav>
-
     <div class="container">
       <div class="display-2 mb-4">Zach Cardais Portfolio</div>
       <p class="lead">Web Design & Development</p>
@@ -64,8 +63,9 @@
 
   <!-- Portfolio Cards -->
   <div class="page">
-    <div class="container card-deck mt-5">
+    <div class="container card-deck mt-5 gallery">
       <h2 class="mt-5 text-uppercase">Our Work</h2>
+      <p class="lead">Here are some of the projects we've worked on. If you have a project and you want to see if we're a good fit, <a href="#contact-form">Get in touch</a> using the contact form below.</p>
 
       <div class="row">
         <div class="col-md-6 col-lg-4">
@@ -370,42 +370,107 @@
           </section> <!-- card -->
         </div><!-- col-md-4 -->
         <div class="clearfix visible-md-block"></div>
+      </div> <!-- row -->
+    </div><!-- .container.card-deck -->
 
-      </div> <!-- container card-deck -->
-      <div class="w-100 p-3" style="height: 100px; background-color: rgba(255,0,0,0.1);">
-        <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height 100%</div>
+    <!-- Work with Us -->
+    <div class="container about pt-4.5 pb-4.5 mt-0 mb-0">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid w-100" src="images/photo_ourwork.jpg" alt="">
+        </div>
+        <div class="col-md-8">
+          <h2 class="mt-4 text-uppercase">Work With Us</h2>
+          <p>We specialize in creating websites for small- and medium-sized B2B and B2C companies. All websites are designed and built through a collaborative process with you, our client…it will have your fingerprints all over it.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm" title="About Zach Cardais">Learn more</a>
+        </div>
       </div>
+    </div><!-- container.about -->
 
-
-      <div class="container">
-        <h2 class="mt-4 text-uppercase">Contact Us</h2>
-        <form action="#">
-          <fieldset class="form-group">
-            <legend>Got a project in mind?</legend>
-            <div class="form-group">
-              <label class="form-control-label sr-only" for="name">Name</label>
-              <input class="form-control" type="text" id="name" placeholder="Your Name">
-            </div><!-- form-group -->
-            <div class="form-group">
-              <label class="form-control-label sr-only" for="email">Email</label>
-              <input class="form-control" type="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
-              <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
-            </div><!-- form-group -->
-            <div class="form-group">
-              <label class="form-control-label sr-only" for="phone">Phone</label>
-              <input class="form-control" type="tel" id="phone" placeholder="Phone Number">
-            </div><!-- form-group -->
-            <div class="form-group">
-              <label class="form-control-label sr-only" for="description">Here's where you tell us about why you're filling out this form.</label>
-              <textarea class="form-control" id="description" name="description" rows="8" cols="80" placeholder="Here's where you tell us about why you're filling out this form."></textarea>
-            </div><!-- form-group -->
-          </fieldset>
-          <button type="button" class="btn btn-success btn-lg btn-block">Send</button>
-        </form>
+    <!-- Testimonials -->
+    <div class="container mt-0 pt-2 testimonials">
+      <h2 class="mt-4 mb-4 text-uppercase">Testimonials</h2>
+      <div class="row">
+        <div class="content col-md-3">
+          <img class="img-fluid img-thumbnail" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/000/273/29b/1913daa.jpg" alt="Mark M.">
+          <h4>Mark M., CEO, Small Business</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatum voluptas, amet, omnis neque nisi debitis aliquid unde quia velit blanditiis aspernatur! Aperiam, nobis. Qui voluptas velit esse, architecto perferendis.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="content col-md-3">
+          <img class="img-fluid img-thumbnail" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAmSAAAAJGI1ZGZiYTUzLTZkNWItNDI1YS04NzQyLTg2NmRlY2VmNzhhMw.jpg" alt="Betsy I.">
+          <h4>Betsy I., CEO, Medium Business</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corrupti quae praesentium, asperiores nostrum quibusdam voluptatum saepe quos maiores provident! Minima molestiae, earum quo error, quod ad laudantium. Quam, praesentium.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p class="quote">Zach is the consummate professional. Working with him and his team was dead simple and the end product, our redesigned company KPI dashboard, exceeded our expectations.</p>
+            <p class="credit"><strong>John Roe</strong>
+              <br> <em>CEO</em>
+              <br> Medium-Sized Company</p>
+          </blockquote>
+        </div>
       </div>
-    </div><!-- .container.card -->
+    </div><!-- .container.testimonial -->
 
-    <footer class="footer mt-5 text-center bg-primary p-3 p-5">
+    <div class="container otherformats mt-4 mb-0">
+      <h2 class="text-uppercase pt-4">Other Formats</h2>
+      <p class="lead">We built this portfolio page with Bootstrap 4. If you'd to see this same portfolio with a different look and feel, visit one of the pages below.</p>
+      <div class="row pb-3">
+        <div class="col-md-6">
+          <h3 class="mt-3">Custom-Built</h3>
+          <a href="index.html">
+            <img class="img-fluid img-thumbnail" width="100%" src="images/responsive_screen.png" alt="Responsive Portfolio">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mt-3">Foundation 6</h3>
+          <a href="foundation.html">
+            <img class="img-fluid img-thumbnail" width="100%" src="images/foundation_screen.png" alt="Foundation 6 Portfolio">
+          </a>
+        </div>
+      </div>
+    </div><!-- .container.otherformats -->
+
+
+    <div class="container contactform pb-3" id="contact-form">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-uppercase pt-4">Get in touch</h2>
+          <p class="lead">We do our best work when we collaborate with passionate, innovative people. If it sounds like we're a good fit for your project, complete the form below and we'll get back to you ASAP…usually the same day.</p>
+        </div>
+        <div class="col-md-6">
+          <form action="#">
+            <h3 class="mt-4">Got a project in mind?</h3>
+            <fieldset class="form-group">
+              <legend>Tell us about it</legend>
+              <div class="form-group">
+                <label class="form-control-label sr-only" for="name">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Name">
+              </div><!-- form-group -->
+              <div class="form-group">
+                <label class="form-control-label sr-only" for="email">Email</label>
+                <input class="form-control" type="email" id="email" aria-describedby="emailHelp" placeholder="Email">
+                <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+              </div><!-- form-group -->
+              <div class="form-group">
+                <label class="form-control-label sr-only" for="phone">Phone</label>
+                <input class="form-control" type="tel" id="phone" placeholder="Phone Number">
+              </div><!-- form-group -->
+              <div class="form-group">
+                <label class="form-control-label sr-only" for="description">Here's where you tell us about why you're filling out this form.</label>
+                <textarea class="form-control" id="description" name="description" rows="8" cols="80" placeholder="Here's where you tell us about why you're filling out this form."></textarea>
+              </div><!-- form-group -->
+            </fieldset>
+            <button type="button" class="btn btn-success btn-lg btn-block">Send</button>
+          </form>
+        </div>
+      </div>
+    </div><!-- .container -->
+
+
+    <footer class="footer text-center bg-primary p-3 p-5">
       <div class="row">
         <div class="col-md-6">&copy; Zach Cardais Portfolio</div>
         <div class="col-md-6">
