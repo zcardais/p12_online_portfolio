@@ -17,7 +17,7 @@ body {
 }
 
 #page {
-  max-width: 1440px;
+  max-width: 75rem;
   margin: 0 auto;
   position: relative;
 }
@@ -133,6 +133,11 @@ section.main aside {
   position: relative;
 }
 
+section.main aside h3 {
+  margin-top: 0.65rem;
+  font-weight: 500;
+}
+
 section.main .content {
   margin: 15px;
   background: no-repeat center center;
@@ -157,48 +162,6 @@ section.main .content:hover {
   color: #fff;
   background-color: #1a1a1a;
   transition: background-color .5s;
-}
-
-section.main aside .content.accessibility-site {
-  background-image: url(../images/accessibility_366x500.png);
-}
-
-section.main aside .content.api-site {
-  background-image: url(../images/api_366x500.png);
-  background-position: top center;
-}
-
-section.main aside .content.dashboard-site {
-  background-image: url(../images/dashboard_366x500.png);
-  background-position: top center;
-}
-
-section.main aside .content.form-site {
-  background-image: url(../images/form_366x500.png);
-}
-
-section.main aside .content.gallery-site {
-  background-image: url(../images/gallery_366x500.png);
-  background-position: top center;
-}
-
-section.main aside .content.photography-site {
-  background-image: url(../images/stockphotography_366x500.png);
-}
-
-section.main aside .content.portfolio-site {
-  background-image: url(../images/portfolio_366x500.png);
-  background-position: center center;
-}
-
-section.main aside .content.svg-site {
-  background-image: url(../images/svg_366x500.png);
-  background-position: top center;
-}
-
-section.main aside .content.video-site {
-  background-image: url(../images/video_366x500.png);
-  background-position: top center;
 }
 
 section.main aside h3 a {
@@ -246,6 +209,15 @@ section.main .expanding_panel {
 
 .expanding_panel.open .expanding_panel_trigger::before {
   content: '\2013 ';
+  height: 10px;
+}
+
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 
