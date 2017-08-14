@@ -1,9 +1,9 @@
-/** index.css **/
+/** index-mobfirst.css **/
 
 * {
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,27 +17,27 @@ body {
 }
 
 #page {
-  max-width: 75rem;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 h1 {
   margin: 0 0 1em 0;
-  font-size: 2.8em;
+  font-size: 1em;
   font-weight: 700;
 }
 
 h2 {
   margin: 0 0 .5em 0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 700;
   line-height: 1.1em;
 }
 
 h3 {
-  margin: 0 0 .5em 0;
-  font-size: 1.3em;
+  margin: 0;
+  font-size: 1.1em;
   font-weight: 700;
 }
 
@@ -60,12 +60,12 @@ a:visited {
 }
 
 a.btn {
-  font-size: 1.2em;
+  font-size: .8em;
   text-decoration: none;
   color: #fff;
   background: #1a1a1a;
   border: 1px solid #fff;
-  padding: 4px 15px;
+  padding: 2px 30px;
 }
 
 a.btn:hover {
@@ -74,22 +74,23 @@ a.btn:hover {
 }
 
 header {
-  height: 430px;
-  background: url(../images/banner_2880x1923.jpg) no-repeat center bottom;
-  background-size: cover;
+  height: 110px;
+  background: url(../images/banner_425x293.jpg) no-repeat center bottom;
+  background-size: 625px auto;
   position: relative;
+  background-position: top left;
 }
 
 header a.logo {
   z-index: 1;
   position: absolute;
   display: block;
-  width: 160px;
-  height: 66px;
-  background: url(../images/logo.png) no-repeat 0 0;
+  width: 100%;
+  height: 36px;
+  background: rgba(0, 0, 0, .65) url(../images/logo_small.png) no-repeat center center;
+  top: 0;
+  left: 0;
   background-size: contain;
-  top: 15px;
-  left: 20px;
 }
 
 header a.logo span {
@@ -98,19 +99,24 @@ header a.logo span {
 
 header div.hero {
   position: absolute;
-  width: 42%;
-  top: 130px;
-  left: 55%;
+  width: 100%;
+  top: 46px;
+  left: 0;
+  text-align: center;
 }
 
 header div.hero h1 {
   line-height: 1em;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
   color: white;
 }
 
+header div.hero a.btn span {
+  display: none;
+}
+
 section {
-  padding: 0 30px;
+  padding: 0 1.875em;
 }
 
 section::after {
@@ -119,30 +125,30 @@ section::after {
   clear: both;
 }
 
-section.main, section.otherformats {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0;
+section.main, article.otherformats {
+  margin-top: .75em;
+  margin-bottom: .75em;
+  padding: .5em;
 }
 
 section.main aside {
-  width: 33%;
-  float: left;
+  max-width: 100%;
+  float: none;
   text-align: center;
   cursor: pointer;
   position: relative;
 }
 
 section.main aside h3 {
-  margin-top: 0.65rem;
+  margin-top: 0.65em;
   font-weight: 500;
 }
 
 section.main .content {
-  margin: 15px;
+  margin: 8px 20px 8px 0;
   background: no-repeat center center;
   background-size: cover;
-  padding-top: 85px;
+  padding-top: 5px 0 10px 85px;
   border: solid 4px #fefefe;
   border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, .2);
@@ -164,13 +170,19 @@ section.main .content:hover {
   transition: background-color .5s;
 }
 
+.gallery-item {
+  font-size: 1em;
+}
+
 section.main aside h3 a {
-  color: #000;
+  color: #a5a5a5;
   text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 126, 99, .5);
 }
 
 section.main aside h3 a:hover {
-  text-decoration: underline;
+  color: #555;
+  border-bottom: 1px dashed #FF390F;
 }
 
 
@@ -179,14 +191,14 @@ section.main aside h3 a:hover {
 section.main .expanding_panel {
   margin: 0 15px 25px 15px;
   color: #000;
-  font-size: .75em;
+  font-size: 1.15em;
   padding: 15px 10px 10px 10px;
 }
 
 .expanding_panel .expanding_panel_trigger {
   cursor: pointer;
   color: #00a5d5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .expanding_panel .expanding_panel_trigger:hover {
@@ -231,15 +243,19 @@ section.about {
 }
 
 section.about article {
-  padding: 0 20px 0 515px;
+  padding: 225px 20px 0 0;
   background: url(../images/photo_ourwork.jpg) no-repeat 0 5px;
-  min-height: 220px;
+  min-height: initial;
+  background-size: 300px auto;
 }
 
 section.about article p {
-  font-size: 1.15rem;
-  line-height: 1.65;
+  font-size: 1em;
+  line-height: 1.2;
 }
+
+
+/*Testimonials Section*/
 
 section.testimonials {
   background-color: #e2e2e2;
@@ -247,19 +263,25 @@ section.testimonials {
 }
 
 section.testimonials aside {
-  width: 30%;
-  float: left;
+  width: 100%;
+  float: none;
+  margin: 0;
+  position: relative;
   min-height: 10px;
 }
 
-section.testimonials aside .content {
-  padding: 30px 30px 20px 0;
+section.testimonials aside div.content {
+  padding: 140px 20px 20px 0;
 }
 
-section.testimonials aside .content img {
-  display: block;
+section.testimonials aside div.content img {
+  display: inline-block;
   margin-bottom: 15px;
-  width: 70%;
+  width: auto;
+  position: absolute;
+  height: 100px;
+  top: 30px;
+  left: 0;
 }
 
 section.testimonials aside .content h4 {
@@ -268,6 +290,7 @@ section.testimonials aside .content h4 {
 
 section.testimonials aside .content p {
   margin-bottom: .5em;
+  font-size: 1em;
 }
 
 section.testimonials aside .content a {
@@ -277,11 +300,12 @@ section.testimonials aside .content a {
 }
 
 section.testimonials blockquote {
-  margin: 0;
-  width: 32%;
+  margin: 10px 40px 0 20px;
+  width: 90%;
+  padding: 1px 0 20px 0;
   color: #444;
   background-color: #fff;
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 4%;
 }
@@ -296,12 +320,13 @@ section.testimonials blockquote p {
 
 section.testimonials blockquote p.quote {
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 section.testimonials blockquote p.credit {
   color: #777;
-  font-size: .75em;
+  font-size: .85em;
   margin-top: 0;
   padding-left: 20px;
   line-height: 1.3em;
@@ -334,51 +359,56 @@ section.testimonials blockquote p.credit::before {
 .heading {
   margin-top: 0;
   background: transparent;
-  padding: 1.25rem;
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 
 .intro {
-  padding: 0 1.25rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.75;
+  padding: .65rem;
 }
 
 section.halfs {
   padding: 0;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  align-items: center;
 }
 
 .half {
-  /* child of .halfs */
-  width: 75%;
-  flex: 1 0 50%;
-  padding: 1rem .5rem;
+  max-width: 75%;
+  flex: 1 0 auto;
+  padding: .75em .25em;
 }
 
 .subheading {
   text-align: center;
-  margin-bottom: 0.5rem;
-  padding: .5rem;
+  margin-bottom: .5em;
+  padding: .5em;
 }
 
 nav {
-  background-color: rgba(0, 0, 0, .65);
-  position: absolute;
+  position: static;
+  width: auto;
+  padding: 20px 15px;
+  background-color: #4b0a0c;
   top: 0;
   left: 0;
-  padding: 50px 0 0 0;
-  width: 100%;
 }
 
 nav::after {
   content: '';
   display: block;
   clear: both;
+}
+
+nav ul, nav ul ul, nav ul ul ul {
+  display: block;
+  position: static;
 }
 
 nav ul {
@@ -388,7 +418,7 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: #770904;
+  background: none;
 }
 
 nav ul li:hover>ul {
@@ -396,11 +426,13 @@ nav ul li:hover>ul {
 }
 
 nav ul li a {
-  display: inline-block;
+  display: block;
+  margin: 8px 10px;
   color: #fff;
-  padding: 10px 20px;
+  padding: 8px 15px;
+  border: 1px solid rgba(255, 255, 255, .25);
   text-decoration: none;
-  width: 125px;
+  width: auto;
   position: relative;
 }
 
@@ -413,14 +445,16 @@ nav ul li a:hover {
 }
 
 nav ul ul {
-  position: absolute;
   top: 100%;
-  background-color: #2b0306;
-  display: none;
+  background: none;
 }
 
 nav ul ul li {
   position: relative;
+}
+
+nav ul ul li a {
+  margin-left: 30px;
 }
 
 nav ul ul ul {
@@ -428,12 +462,17 @@ nav ul ul ul {
   top: 0;
 }
 
+nav ul ul ul li a {
+  margin-left: 60px;
+}
+
 nav>ul {
-  padding-left: 200px;
+  padding: 0;
 }
 
 nav>ul>li {
-  float: left;
+  float: none;
+  margin-top: 25px;
 }
 
 nav>ul>li>a {
@@ -441,68 +480,35 @@ nav>ul>li>a {
   padding: 10px 20px 15px 20px;
 }
 
-nav a[aria-haspopup="true"]::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 16px;
-  right: 15px;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 4px solid #fff;
-}
-
-nav>ul>li>a[aria-haspopup="true"]::after {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid #fff;
-  left: 20px;
-  right: auto;
-  bottom: 6px;
-  top: auto;
-}
-
 
 /*CONTACT FORM*/
 
 section.form {
   background: #f9f9f9;
-  max-width: 1440px;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
+  padding: 0 1em;
 }
 
 .contact-form {
   display: flex;
   flex-wrap: wrap;
   margin-right: -2em;
+  padding: 25px 0;
+  width: 100%;
 }
 
 .form-group {
-  flex: 1 0 300px;
-  margin-right: 2em;
+  flex: 0 1 320px;
+  margin-right: auto;
+  padding: 0;
 }
-
-.item {}
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
   font: 400 12px/16px "Open Sans", sans-serif;
   width: 100%;
   padding: .75rem;
-}
-
-#contact {
-  padding: 25px 0;
-  width: 100%
-}
-
-#contact .lead {
-  font-size: 1.05rem;
-  font-weight: 300;
-  line-height: 1.5;
 }
 
 #contact h3 {
@@ -598,10 +604,6 @@ footer {
   color: #999;
 }
 
-footer .content {
-  display: inline;
-}
-
 footer a {
   margin-left: 30px;
   color: #777;
@@ -615,188 +617,78 @@ footer a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 2.4em;
-  }
-  header div.hero {
-    left: 56%;
-  }
-  header div.hero h1 {
-    margin-bottom: 20px;
-  }
-  section.about article {
-    padding-left: 400px;
-    background-size: 375px auto;
-  }
+footer div.content {
+  margin-top: 15px;
 }
 
-@media screen and (max-width: 825px) {
-  h1 {
-    font-size: 2.2em;
-  }
-  header {
-    height: 300px;
-    background-image: url(../images/banner_2880x1923.jpg);
-    background-size: 825px auto;
-  }
-  header div.hero {
-    top: 120px;
-    left: 48%;
-  }
-  section.about article {
-    padding-left: 325px;
-    background-size: 300px auto;
-  }
-  section.testimonials blockquote p.quote {
-    font-size: 1.1em;
-    line-height: 1.2em;
-  }
-  section.testimonials blockquote p.credit {
-    font-size: .85em;
-  }
-  section.form {
-    background: #f9f9f9;
-  }
-  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
-    font: 400 12px/16px "Open Sans", sans-serif;
-    width: 100%;
-    padding: .75rem;
-  }
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-@media screen and (max-width: 760px) {
-  h1 {
-    font-size: 1.8em;
-  }
-  h2 {
-    font-size: 1.4em;
-  }
-  h3 {
-    font-size: 1.1em;
-  }
-  a.btn {
-    font-size: 1em;
-  }
-  header a.logo {
-    width: 145px;
-    height: 60px;
-  }
-  header div.hero {
-    top: 140px;
-    left: 48%;
-  }
-  section.main, section.halfs {
-    margin-top: .75rem;
-    margin-bottom: .75rem;
-  }
-  .heading {
-    padding: 1.5rem 1rem 1rem 1rem;
-  }
-  .intro {
-    padding: .65rem;
-    font-size: 1.1rem;
-    line-height: 1.75;
-  }
-  section.main aside div.content {
-    /*background-size: 73%;*/
-    /* TODO: Adjust percentage to fix this */
-    padding-top: 60px;
-  }
-  section.testimonials aside div.content img {
-    width: 85%;
-  }
-  section.halfs {
-    flex-flow: column wrap;
-    align-items: center;
-  }
-  .half {
-    flex: 1 0 auto;
-  }
-  nav {
-    padding-top: 80px;
-  }
-  nav>ul {
-    padding-left: 10px;
-  }
+footer div.content a {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  float: left;
+  clear: both;
 }
 
-@media screen and (max-width: 625px) {
+
+/******************************
+426px and up
+******************************/
+
+@media screen and (min-width: 426px) {
   h1 {
     font-size: 1em;
-  }
-  h3 {
-    margin-bottom: 0;
   }
   a.btn {
     font-size: .9em;
+    padding: 4px 15px;
   }
   header {
     height: 160px;
     background-image: url(../images/banner_2880x1923.jpg);
-    background-size: 625px auto;
     background-position: top left;
   }
   header a.logo {
-    width: 100%;
-    height: 66px;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, .65);
-    background-size: 112px 46px;
+    background-size: 60px auto;
     background-position: 20px center;
+  }
+  header div.hero a.btn span {
+    display: inline;
   }
   header div.hero {
     width: 300px;
     top: 85px;
     left: 130px;
+    text-align: start;
   }
-  header div.hero h1 {
-    margin-bottom: 10px;
-  }
-  section.main aside {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
-  section.main aside div.content {
-    margin: 8px 20px 8px 0;
-    padding: 5px 0 10px 85px;
-    background-size: cover;
-    /* TODO: Adjust size to fix */
-    /*background-position: 20px 5px;*/
-  }
-  section.main .expanding_panel {
-    font-size: .9em;
-    padding: 5px 10px 30px 10px;
-  }
-  section.about article {
-    padding: 225px 20px 0 0;
-    background-size: 300px auto;
-    min-height: initial;
-  }
-  section.about article p {
-    font-size: 1rem;
-    line-height: 1.2;
+  section {
+    padding: 0 2em;
   }
   section.testimonials aside {
     width: 100%;
     float: none;
     margin: 0;
     position: relative;
+    min-height: 10px;
   }
   section.testimonials aside div.content {
     padding: 20px 20px 20px 150px;
   }
-  section.testimonials aside div.content p {
+  section.testimonials aside .content p {
     font-size: .9em;
   }
   section.testimonials aside div.content img {
     display: inline-block;
     width: 125px;
+    height: auto;
     position: absolute;
     top: 30px;
     left: 0;
+    margin-bottom: 15px;
   }
   section.testimonials blockquote {
     margin: 0 20px 0 40px;
@@ -807,103 +699,403 @@ footer a:hover {
   section.how-to blockquote p.credit {
     margin-bottom: 0;
   }
-  nav {
-    position: static;
-    width: auto;
-    padding: 20px 15px;
-    background-color: #4b0a0c;
-  }
-  nav ul, nav ul ul, nav ul ul ul {
-    display: block;
-    position: static;
-  }
-  nav>ul {
-    padding: 0;
-  }
-  nav>ul>li {
-    float: none;
-    margin-top: 25px;
-  }
-  nav ul li:hover {
-    background: none;
-  }
-  nav ul li a {
-    width: auto;
-    display: block;
-    margin: 8px 10px;
-    padding: 8px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-  }
-  nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  nav ul ul {
-    background: none;
-  }
-  nav ul ul li a {
-    margin-left: 30px;
-  }
-  nav ul ul ul li a {
-    margin-left: 60px;
-  }
-  nav a[aria-haspopup="true"]::after {
-    display: none;
+  .form-group {
+    flex: 1 0 320px;
+    padding: 0 2em;
   }
   footer div.content {
     display: block;
     margin-top: 15px;
   }
   footer div.content a {
-    margin: 0 20px 0 0;
+    display: inline;
+    margin-left: 20px;
+    float: none;
   }
 }
 
-@media screen and (max-width: 425px) {
+
+/******************************
+626px and up
+******************************/
+
+@media screen and (min-width: 626px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h3 {
+    margin: 0 0 .5em 0;
+  }
+  a.btn {
+    font-size: 1em;
+  }
   header {
-    height: 110px;
-    background-image: url(../images/banner_425x293.jpg);
+    height: 300px;
+    background: url(../images/banner_2880x1923.jpg) no-repeat center bottom;
+    background-size: 825px auto;
   }
   header a.logo {
-    height: 36px;
-    background: rgba(0, 0, 0, .65) url(../images/logo_small.png) no-repeat center center;
+    width: 145px;
+    height: 60px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: contain;
+    top: 15px;
+    left: 20px;
   }
   header div.hero {
-    width: 100%;
-    left: 0;
-    top: 46px;
-    text-align: center;
+    top: 140px;
+    left: 48%;
+    width: 42%;
   }
   header div.hero h1 {
-    font-size: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  header div.hero a.btn {
-    padding: 2px 30px;
-    font-size: .8em;
+  section.main aside {
+    width: 50%;
+    float: left;
+    padding: 0 .5em;
   }
-  header div.hero a.btn span {
-    display: none;
+  section.main aside .content {
+    margin: 15px;
+    padding-top: 60px;
+  }
+  section.about article {
+    padding: 0 20px 0 325px;
+    background: url(../images/photo_ourwork.jpg) no-repeat 0 5px;
+    min-height: 220px;
+    background-size: 300px auto;
+  }
+  section.about article p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+  }
+  section.testimonials aside {
+    width: 30%;
+    float: left;
+    min-height: 10px;
   }
   section.testimonials aside div.content {
-    padding: 140px 20px 20px 0;
+    padding: 30px 30px 20px 0;
   }
   section.testimonials aside div.content img {
-    width: auto;
-    height: 100px;
-    top: 30px;
+    display: block;
+    width: 85%;
+    position: static;
+  }
+  section.testimonials aside .content h4 {
+    margin-bottom: 0;
+  }
+  section.testimonials aside .content p {
+    margin-bottom: .5em;
+  }
+  section.testimonials aside .content a {
+    display: inline-block;
+    color: #ff370f;
+    font-weight: 700;
   }
   section.testimonials blockquote {
-    margin: 10px 40px 0 20px;
+    margin: 0;
+    padding: 0;
+    width: 32%;
+    color: #444;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
   }
-  footer::after {
+  section.testimonials blockquote p {
+    margin: 30px 30px 20px 50px;
+  }
+  section.testimonials blockquote p.quote {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  section.testimonials blockquote p.credit {
+    color: #777;
+    font-size: 0.85em;
+    margin: 0 30px 20px 50px;
+    padding-left: 20px;
+    line-height: 1.3em;
+    position: relative;
+  }
+  section.testimonials blockquote::before {
+    content: '\201c';
+    color: #e2e2e2;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 5em;
+    font-family: serif;
+  }
+  section.testimonials blockquote p.quote::after {
+    content: '\201d';
+    color: #e2e2e2;
+    font-family: serif;
+  }
+  section.testimonials blockquote p.credit::before {
+    content: '\2014';
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+  strong {
+    font-weight: 700;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, .65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 80px 0 0 0;
+    width: 100%;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li:hover {
+    background-color: #770904;
+  }
+  nav ul li a:hover {
+    background-color: #ba140d;
+  }
+  nav>ul {
+    padding-left: 10px;
+  }
+  nav>ul>li {
+    float: left;
+  }
+  nav>ul>li>a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
+  }
+  nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    width: 125px;
+    margin: 0;
+  }
+  nav>ul>li {
+    margin-top: 0;
+  }
+  nav>ul>li>a {
+    width: auto;
+    padding: 10px 20px 15px 20px;
+    margin-top: 0;
+  }
+  nav ul ul {
+    position: absolute;
+    background-color: #2b0306;
+    display: none;
+  }
+  nav ul ul li a {
+    margin: 0;
+  }
+  nav ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  nav a[aria-haspopup="true"]::after {
     content: '';
     display: block;
-    clear: both;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
   }
-  footer div.content a {
-    display: inline-block;
-    margin: 0 0 10px 0;
+  nav>ul>li>a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px;
+    right: auto;
+    bottom: 6px;
+    top: auto;
+    display: none;
+  }
+  footer div.content {
+    display: inline;
+    margin-top: 15px;
+  }
+  footer a {
+    margin-left: 30px;
+  }
+}
+
+
+/******************************
+761px and up
+******************************/
+
+@media screen and (min-width: 761px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  a.btn {
+    font-size: 1.2em;
+  }
+  header {
+    background-image: url(../images/banner_2880x1923.jpg);
+    background-size: cover;
+  }
+  header a.logo {
+    width: 160px;
+    height: 66px;
+  }
+  header div.hero {
+    top: 120px;
+  }
+  section.main aside .content {
+    padding-top: 85px;
+  }
+  section.testimonials aside div.content img {
+    width: 70%;
+  }
+  .heading {
+    margin-top: 0;
+    background: transparent;
+    padding: 1.25rem;
+  }
+  .intro {
+    padding: 0 1.25rem;
+    font-size: 1.2rem;
+    line-height: 1.75;
+  }
+  section.halfs {
+    flex-flow: row wrap;
+  }
+  .half {
+    width: 75%;
+    flex: 1 0 50%;
+    padding: 1rem .5rem;
+  }
+  nav {
+    padding-top: 50px;
+  }
+  nav>ul {
+    padding-left: 200px;
+  }
+  nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
+  }
+  nav>ul>li>a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px;
+    right: auto;
+    bottom: 6px;
+    top: auto;
+  }
+}
+
+
+/******************************
+826px and up
+******************************/
+
+@media screen and (min-width: 826px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  header {
+    height: 430px;
+  }
+  header a.logo {
+    width: 160px;
+    height: 66px;
+    background: url(../images/logo.png) no-repeat 0 0;
+    background-size: contain;
+    top: 15px;
+    left: 20px;
+  }
+  header div.hero {
+    top: 130px;
+    left: 56%;
+  }
+  section.about article {
+    padding-left: 400px;
+    background-size: 375px auto;
+  }
+}
+
+
+/******************************
+X-LARGE SCREENS
+******************************/
+
+@media screen and (min-width: 1001px) {
+  #page {
+    max-width: 75rem;
+  }
+  h1 {
+    margin-bottom: 1em;
+    font-size: 2.8em;
+  }
+  h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+  }
+  h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    margin: 0 0 .5em 0;
+  }
+  h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+  }
+  a.btn {
+    font-size: 1.2em;
+  }
+  header a.logo {}
+  header div.hero {
+    left: 55%;
+  }
+  section {
+    padding: 0 2em;
+  }
+  section.main, article.otherformats {
+    margin-top: 1.25em;
+    margin-bottom: 1.875em;
+    padding: 0;
+  }
+  section.main aside {
+    width: 33%;
     float: left;
-    clear: both;
+    padding: 0;
+  }
+  section.about article {
+    padding: 0 20px 0 515px;
+    background-size: auto;
+  }
+  section.halfs {
+    flex-flow: row nowrap;
+  }
+  .half {
+    max-width: 100%;
+    flex: 0 1 auto;
   }
 }
