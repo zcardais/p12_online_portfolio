@@ -4,7 +4,15 @@ The final capstone project for the Front End Web Development Techdegree Program.
 
 ## About this Project
 
-There are 
+There are three portfolio pages in my P12 project.
+
+1. Home/Responsive Portfolio - 100% html, css, js and jquery by me
+2. Bootstrap 4 portfolio - I've always liked Bootstrap but it's been a while since I used it. So, I created a version of the portfolio using it.
+3. Foundation 6 portfolio - using a little Sass along with the Foundation 6 XY grid to create the portfolio. This was the most challenging of all three portfolio pages and it's also the most incomplete of the three (e.g. there's no lightbox functionality, but it was a worthwhile experience nonetheless).
+
+I had trouble clearing the floats in the portfolio gallery on the home page. You'll see what I mean if you click the "Read more" link below one of the portfolio items...the layout of the whole gallery breaks, a result of not clearing the floats. I tried to apply a clearfix property to the parent container but it didn't fix the issue. Any insight you could offer on this would be much appreciated.
+
+The demo URL is: <http://zcardais.github.io/p12_online_portfolio>
 
 ## Help & How-to
 
